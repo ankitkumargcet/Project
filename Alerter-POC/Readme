@@ -1,1 +1,17 @@
-Test
+#Using MYSQL DB For the Project
+
+1. Create a user with name 'apple' in MySQL DB using root user
+
+CREATE USER 'apple'@'localhost' IDENTIFIED BY 'apple@123';
+GRANT ALL PRIVILEGES ON * . * TO 'apple'@'localhost';
+FLUSH PRIVILEGES;
+
+2. Check for the user after creation
+
+SELECT User FROM mysql.user;
+
+3. Login using the new created user
+
+mysql -u apple -p;
+apple@123
+
