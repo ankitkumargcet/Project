@@ -28,7 +28,7 @@ public class AlertsController {
 	}
 
 	@PostMapping
-	public List<Alerts> getAllAlertsByRank(@RequestBody List<Integer> input) {
+	public Iterable<Alerts> getAllAlertsByRank(@RequestBody List<Integer> input) {
 		List<Alerts> alerts = null;
 		boolean flag = false;
 
